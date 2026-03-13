@@ -1,0 +1,128 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`C64 Product List Logic > matches the C64 UI snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="c64-viewport"
+  >
+    <header
+      class="c64-header"
+    >
+      <p>
+        **** COMMODORE 64 BASIC V2 ****
+      </p>
+      <p>
+        64K RAM SYSTEM  38911 BASIC BYTES FREE
+      </p>
+      <p>
+        READY.
+      </p>
+      <p
+        class="load-command"
+      >
+        LOAD "PRODUCT_LIST",8,1
+      </p>
+    </header>
+    <div
+      class="product-grid"
+    >
+      <div
+        class="c64-card"
+      >
+        <h2
+          class="p-name"
+        >
+          Commodore 64
+        </h2>
+        <p
+          class="p-desc"
+        >
+          64KB of RAM. The legend returns. Includes BASIC V2.
+        </p>
+        <p
+          class="p-price"
+        >
+          $595.00
+        </p>
+        <div
+          class="p-footer"
+        >
+          SEARCHING...FOUND
+        </div>
+      </div>
+      <div
+        class="c64-card"
+      >
+        <h2
+          class="p-name"
+        >
+          1541 Disk Drive
+        </h2>
+        <p
+          class="p-desc"
+        >
+          Fast (enough) loading for all your 5.25 inch floppies.
+        </p>
+        <p
+          class="p-price"
+        >
+          $399.00
+        </p>
+        <div
+          class="p-footer"
+        >
+          SEARCHING...FOUND
+        </div>
+      </div>
+      <div
+        class="c64-card"
+      >
+        <h2
+          class="p-name"
+        >
+          1702 Color Monitor
+        </h2>
+        <p
+          class="p-desc"
+        >
+          Crisp 320x200 resolution. Perfect for GEOS.
+        </p>
+        <p
+          class="p-price"
+        >
+          $250.00
+        </p>
+        <div
+          class="p-footer"
+        >
+          SEARCHING...FOUND
+        </div>
+      </div>
+      <div
+        class="c64-card"
+      >
+        <h2
+          class="p-name"
+        >
+          1351 Mouse
+        </h2>
+        <p
+          class="p-desc"
+        >
+          Two buttons. One ball. Maximum precision for KoalaPad.
+        </p>
+        <p
+          class="p-price"
+        >
+          $49.99
+        </p>
+        <div
+          class="p-footer"
+        >
+          SEARCHING...FOUND
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
