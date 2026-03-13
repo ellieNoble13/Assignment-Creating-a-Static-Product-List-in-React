@@ -1,0 +1,74 @@
+/* Commodore 64 Color Palette */
+:root {
+    --c64-blue: #3e31a1;
+    --c64-light-blue: #7a6bd3;
+    --c64-bg: #4339ac;
+}
+
+body {
+    background-color: var(--c64-light-blue);
+    margin: 0;
+    padding: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--c64-light-blue);
+}
+
+.c64-viewport {
+    background-color: var(--c64-blue);
+    border: 40px solid var(--c64-light-blue);
+    min-height: 80vh;
+    padding: 20px;
+    box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
+}
+
+.c64-header {
+    text-align: left;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    color: var(--c64-light-blue);
+    text-transform: uppercase;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.c64-card {
+    background: var(--c64-blue);
+    border: 2px solid var(--c64-light-blue);
+    padding: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    transition: all 0.1s steps(4);
+}
+
+
+.c64-card:hover {
+    background: var(--c64-light-blue);
+    color: var(--c64-blue);
+    cursor: crosshair;
+}
+
+.c64-card:hover .p-name { color: #fff; }
+
+.p-name { color: var(--c64-light-blue); font-size: 1.2rem; margin-top: 0; }
+.p-desc { font-size: 0.9rem; margin: 15px 0; border-bottom: 2px dashed; padding-bottom: 10px; }
+.p-price { font-weight: bold; color: #fff; }
+
+.p-footer { font-size: 0.7rem; margin-top: 10px; opacity: 0.7; }
+
+
+.load-command::after {
+    content: "█";
+    animation: blink 0.8s infinite;
+    margin-left: 5px;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
